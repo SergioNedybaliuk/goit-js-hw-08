@@ -16,7 +16,7 @@ const galleryList = galleryItems.map(({preview, original, description}) =>
 
   gallery.innerHTML = galleryList;
 
-  SimpleLightbox = new SimpleLightbox(".gallery a", {
+  const Lightbox = new SimpleLightbox(".gallery a", {
     captionsData: 'alt',
     captionPosition: 'bottom',
     captionDelay: 700,
