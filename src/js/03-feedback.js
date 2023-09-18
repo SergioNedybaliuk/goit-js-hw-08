@@ -32,9 +32,7 @@ function handleSubmit(event) {
   const emailInput = document.querySelector('input[name="email"]').value;
   const messageTextarea = document.querySelector('textarea[name="message"]').value;
   
-  console.log('Form Data Submitted:');
-  console.log('Email:', emailInput);
-  console.log('Message:', messageTextarea);
+  console.log({Email: emailInput, messageTextarea});
 
   document.querySelector('input[name="email"]').value = '';
   document.querySelector('textarea[name="message"]').value = '';
